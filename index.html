@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Yousuf - Front End Developer</title>
+
+    <!-- Import Google Fonts for a clean, professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons used in contact and social links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Link to external stylesheet for custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="infosection"> 
+    <!-- Profile Image and Basic Info -->
+    <div class="image">
+        <img src="./img/mypic.jpeg" alt="Muhammad Yousuf Photo" class="myImg">
+        <h2 style="color: #333;">Muhammad Yousuf</h2>
+        <h4>Front End Developer</h4>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="personalInfo">
+        <section>
+            <h2 id="subhead">About Me</h2>
+            <p style="color: #333;">
+                Passionate about mastering skills in JavaScript, TypeScript, HTML & CSS. Actively enhancing my knowledge through platforms like AIT, GIAIC, and PIAIC.
+            </p>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="contact">
+            <h2 id="subhead">Contact Me</h2>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:coolmaster808@gmail.com">coolmaster808@gmail.com</a></p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+        </section>
+
+        <!-- Social Links Section -->
+        <section class="follow">
+            <h2 id="subhead">Follow Me</h2>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/muhammad-yousuf-786yousuf">LinkedIn</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/Muhammad-Yousuf3">GitHub</a></p>
+        </section>
+    </div>
+</div>
+
+<!-- Main Section for Education, Skills, and Projects -->
+<div class="maindiv">
+    <section class="education">
+        <h1 style="color: #333;">Education</h1>
+        <h3 style="color: #333;">Certified AI, Web 3.0, Metaverse Developer (In Progress)</h3>
+        <h4>Governor Sindh IT Initiative</h4>
+
+        <h3 style="color: #333;">Certified Cloud Native Applied Generative AI Engineer (In Progress)</h3>
+        <h4>PIAIC</h4>
+
+        <h3 style="color: #333;">Diploma in Associate Engineering (Software) (In Progress)</h3>
+        <h4>Aligarh Institute of Technology</h4>
+    </section>
+
+    <section class="skills">
+        <h1 style="color: #333;">Skills</h1>
+        <h3>HTML</h3>
+        <h3>CSS</h3>
+        <h3>TypeScript</h3>
+    </section>
+
+    <section class="workExp">
+        <h1 style="color: #333;">Work Experience</h1>
+        <button id="skillButton" class="button" onclick="myButton()">Click To See Work Experience</button>
+    </section>
+
+    <!-- JavaScript to dynamically display work experience and projects -->
+    <script>
+        function myButton() {
+            const button = document.getElementById("skillButton");
+            button.outerHTML = `
+               
+<section class="projects">
+    <h2>Projects</h2>
+
+    <!-- Project 1: Recipe Website -->
+    <div class="sub">
+        <img src="./img/homepage 1.png" alt="Recipe Website" class="pic">
+        <h3>Recipe Website</h3>
+        <p>Static Recipe Website built using HTML and CSS.</p>
+    </div>
+
+    <!-- Project 2: Number Guessing Game -->
+    <div class="sub">
+        <a href="https://github.com/Muhammad-Yousuf3/cli-number-guessing-game.git">
+            <img src="./img/num guessing.webp" alt="Number Guessing Game" class="pic">
+            <h3>Number Guessing Game</h3>
+        </a>
+        <p>Command Line Interface (CLI) game developed with TypeScript.</p>
+    </div>
+
+    <!-- Project 3: ATM Machine -->
+    <div class="sub">
+        <a href="https://github.com/Muhammad-Yousuf3/ATM_Machine_with_basic-features.git">
+            <img src="./img/atm.jpg" alt="ATM Machine" class="pic">
+            <h3>ATM Machine</h3>
+        </a>
+        <p>CLI ATM Machine simulation with features like Withdraw, Check Balance, and Fast Cash, built using TypeScript.</p>
+    </div>
+
+    <!-- Project 4: Calculator -->
+    <div class="sub">
+        <a href="https://github.com/Muhammad-Yousuf3/calculator_with-6operations_bmi.git">
+            <img src="./img/calculator.jpg" alt="Calculator" class="pic">
+            <h3>Calculator</h3>
+        </a>
+        <p>CLI Calculator with basic arithmetic operations and BMI calculation feature, created using TypeScript.</p>
+    </div>
+
+    <!-- Project 5: Currency Converter -->
+    <div class="sub">
+        <a href="https://github.com/Muhammad-Yousuf3/currency_convertor.git">
+            <img src="./img/currency convertor.png" alt="Currency Converter" class="pic">
+            <h3>Currency Converter</h3>
+        </a>
+        <p>CLI Currency Converter supporting multiple currencies. Developed with TypeScript.</p>
+    </div>
+</section>
+
+
+            `;
+        }
+    </script>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+

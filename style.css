@@ -1,0 +1,119 @@
+/* Basic styles */
+body {
+    background-color: #f0f4f8;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container to hold both infosection and maindiv */
+.container {
+    display: flex; /* Flexbox to align items side by side */
+    justify-content: space-between;
+    padding: 10px; /* Reduced padding */
+    box-sizing: border-box;
+    max-width: 1000px; /* Reduced max-width for tighter layout */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Sidebar */
+.infosection {
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Reduced padding */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Profile image */
+.image {
+    text-align: center;
+}
+
+.myImg {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+h2, h4 ,h3{
+    color: royalblue;
+}
+
+/* Main content */
+.maindiv {
+    width: 68%;
+    padding: 10px; /* Reduced padding */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Project grid */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px; /* Reduced gap between project items */
+}
+
+.sub {
+    background-color: white;
+    padding: 10px; /* Reduced padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.sub:hover {
+    transform: scale(1.05);
+}
+
+.pic {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.pic:hover {
+    transform: scale(1.1);
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 8px 12px; /* Slightly reduced button padding */
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(black);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: blue;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+a {
+    color: royalblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sections on small screens */
+        width: 100%;
+    }
+    
+    .infosection, .maindiv {
+        width: 100%; /* Full width on small screens */
+    }
+}
